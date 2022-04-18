@@ -1,0 +1,28 @@
+Executar un programa: situar terminal al directori on esta el programa i còrrer go run <nomPrograma.go>
+
+Les ordres no s'acaben amb ;
+Tot programa de Go te un arxiu main.go amb func main(){}
+Els strings van amb " " i no amb ' '
+Els mètodes en majúscula son públics, en minúscula privats
+//comentari d'una linia
+/* comentari */ comentari de diverses linies
+nombre_variable := valor
+
+initialize various variables:
+j, k, l := "shark", 2.05, 5
+
+this would be the same:
+j := "shark"
+k := 2.05
+l:= 5
+
+No es poden declarar variables que no s'utilitzin
+Es reassignen valors amb =
+
+es declaren variables amb var i constants amb const
+
+amb el + concatenem element del mateix tipus.
+amb la , concatenem element de tipus diferents
+
+Agrupacions de variables del mateix tipus: arrays, slices o maps
+Agrupacions de variables diversos tipus: struct
