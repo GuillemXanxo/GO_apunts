@@ -28,6 +28,13 @@ func main() {
   z = append(z[:9], z[11:]...) //Vull eliminar z[9] i z[10] per tant enganxo array de 0 a 8 i de 11 al final
   fmt.Println(z)
 
+  //COPIAR SLICES
+  original:= []int{1,2,3,4,5}
+  copia := make([]int, 3, 3)
+  n := copy(copia, original)
+  fmt.Println(n, "numeros copiados: ", copia)
+  /* la funcio copy copia un slice en otro hasta completar la capacidad de cualquiera de los dos. Retorna el numero de valores copiados, en este caso guardados en variable n */
+
   //Multidimensionals
   samarreta := []string{"XL", "Decathlon", "verd"}
   polo := []string{"M", "lacoste", "groc"}
@@ -37,15 +44,15 @@ func main() {
   //Declarar un slice des de core Go:
   coreSlice := make([]int, 5, 100) //tipus de dades, dades inicials, capacitat màxima
   fmt.Println(coreSlice) //imprimirà el contingut del slice
-  fmt.Println(len(coreSlice)) //imprimeix el número d'elements al slice
-  fmt.Println(cap(coreSlice)) //imprimeix la capacitat total del slice
+  fmt.Println(len(coreSlice)) //imprimeix el número d'elements al slice LEN
+  fmt.Println(cap(coreSlice)) //imprimeix la capacitat total del slice CAP
 
-  /* Els slice són punters de memòria a un array. Cada vegada que canvia el len crea un array de la nova capacitat
+  /* Els slice són punters de memòria a un array. Cada vegada que canvia el length crea un array de la nova capacitat
 per tant, formen un tipus en si mateix. Un slice no és comparable amb res que no sigui un slice.
-Els lices  es comparan amb la llibreria reflect, mètode DeepEqual. */
+Els lices es comparan amb la llibreria reflect, mètode DeepEqual. */
 
   s1 := []int{0, 1, 2}
-  s2 := []int{1, 2, 3}
+  s2 := []int{0, 1, 2}
   if reflect.DeepEqual(s1, s2) {
     fmt.Println("Els slices son iguals!")
   } else {
