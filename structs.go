@@ -5,6 +5,7 @@ import (
 )
 
 //Els camps han de ser únics! Es defineixen fora de la funció main()
+//Els noms en minuscula només seran accessibles des d'aquest package, si els volem fer publics han de ser en majúscules
 type persona struct{
   nom string
   edat int
