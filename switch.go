@@ -8,7 +8,7 @@ func main(){
   energia := 78
   booster := false
 
-  //Un switch que funciona com una cade de if, else if...cada case té la seva lògica
+  //Un switch que funciona com una case de if, else if...cada case té la seva lògica --> BLANK SWITCH
   switch {
   case energia == 100, booster == true:
     fmt.Println("Energia carregada")
@@ -19,7 +19,7 @@ func main(){
     fmt.Println("Error")
   }
 
-  planta := 2
+  planta := 5
 
   switch planta {
   case 1, 3:
@@ -28,6 +28,7 @@ func main(){
     fmt.Println("Moda infantil")
   case 4:
     fmt.Println("Joguines")
+  case 5, 6: // En aquest cas no fara res
   default:
     fmt.Println("Error")
   }

@@ -22,4 +22,14 @@ func main() {
       fmt.Println(i, unicode, string(unicode))
     }
   }
+
+  //TROBAR UN ELEMENT EN UN SLICE O ARRAY
+  func contains(s []int, e int) bool {
+    for _, a := range s {
+        if a == e {
+            return true
+        }
+    }
+    return false
+  }
 }

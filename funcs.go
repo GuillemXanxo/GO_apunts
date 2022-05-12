@@ -13,7 +13,7 @@ func main(){
   fmt.Println(max, min)
 }
 
-//Les funcions poden tenir varis returns. Es declare fora de main
+//Les funcions poden tenir varis returns. Es declaren fora de main
 
 func saluda() {
   fmt.Println("Hola")
