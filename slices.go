@@ -19,7 +19,7 @@ func main() {
   z = append(x, y...)
   fmt.Println(z)
 
-  //MANIPULACIÓ SLICE
+  //MANIPULACIÓ SLICE --> REVISAR EXERCICI DE SUBSLICES
   a := []int{}
   a = (z[9:11]) //z[9] inclòs, z[11] NO inclòs --> crees un slice de [z[9], z[10]]
   fmt.Println(a)

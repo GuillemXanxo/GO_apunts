@@ -1,0 +1,11 @@
+go vet <nom arxiu> : Passa un lint al nostre arxiu.
+
+
+instalar control per variables shadow:
+  go install golang.org/x/tools/go/analysis/passes/shadow/cmd/shadow@latest
+
+when running our make file:
+  vet:
+    go vet ./..
+    shadow ./..
+  .PHONY:vet

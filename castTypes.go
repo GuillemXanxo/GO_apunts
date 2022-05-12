@@ -50,7 +50,9 @@ func main() {
 
   fmt.Println("Hola " + nom + ", tens " + strconv.Itoa(edat) + " anys.")
 
-  //CAST de string a int (atoi
+  //CAST de string a int (atoi)
+
+  
   
 
 }
