@@ -1,3 +1,6 @@
+/* Aixo passa amb primitive values i structs, pero no amb maps ni slices ja que
+internament ja son pointers */
+
 package main
 
 import (

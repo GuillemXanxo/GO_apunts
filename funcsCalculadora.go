@@ -28,6 +28,7 @@ func main(){
     []string{"5"},
   }
 
+  //FIXA'T EN LA GESTIO D'ERRORS, ES LA CLAU! 
   for _, expression := range expressions {
     if len(expression) !=3 {
       fmt.Println("invalid expression: ", expression)
