@@ -14,7 +14,7 @@ func main(){
   fmt.Println("a = ", a)
   /* La funcion Incrmeneta trabaja sobre una copia que no retorna, por lo que el valor de a en el main sigue siendo de 3 */
 
-  // 1a SOLUCION: la func retorna el valor y lo guardamos en una variable
+  // 1a SOLUCION: la func retorna el valor y lo guardamos en una variable b, pero a no ha incrementado
   b := Incrementareturn(a)
   fmt.Println("b = ", b)
 

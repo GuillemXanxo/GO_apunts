@@ -42,6 +42,8 @@ func main(){
   }
 
   fmt.Println(enginyer1)
+  fmt.Println(enginyer1.realitzaPlanols) //podem accedir als camps de persona des de enginyer
+  fmt.Println(enginyer1.nom)
 
   //ANONYMOUS STRUCTS (utils per mashall i unmarshall data d'un JSON)
   //Primera manera
@@ -63,4 +65,6 @@ func main(){
     name: "Becker",
     kind: "dog",
   }
+
+  fmt.Println(pet)
 }
