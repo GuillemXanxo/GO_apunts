@@ -1,3 +1,5 @@
+//Given some inputs they will change the state of those inputs (in contrast with funcs)
+
 package main
 
 import (

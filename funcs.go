@@ -1,3 +1,5 @@
+//It is a function if given the same inputs we will always get the same outputs (in contrast with methods)
+
 package main
 
 import (
